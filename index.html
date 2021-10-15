@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <title>
+      family book
+    </title>
+  </head>
+  <body>
+    <h1>
+      Family Book
+    </h1>
+    <hr> <hr>
+    <img style="width:300px ; height:400px ;" id="family_img" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1557711485l/44495497._SX318_.jpg">
+  <h3 id="one">1. Our Family Book</h3>
+<button type="button" onclick="family()">Next</button>
+
+<hr>
+
+<script>
+var names=[
+ " 2. My Father ('Naveen')",
+  "3. My Mother ('Ireen')",
+  "4. My Grandfather ('ChellaMuthu')",
+  "5 my sister ('Deepali')",
+  "6 Me  ('Kaushal')",
+  "7 My Grandmother ('Vimala')"
+];
+
+var images=["father.jpg","mother.png","grandfather.jpg","sister.png","boy.jpg","grandmother.png"];
+
+var i=0;
+function family(){
+  i++;
+var number_of_family_members=5;
+if(i>5){
+  i=0;
+}
+var updateimage=images[i];
+var updatename=names[i];
+document.getElementById("family_img").src=updateimage;
+document.getElementById("one").innerHTML=updatename;
+}
+
+
+</script>
+</html>

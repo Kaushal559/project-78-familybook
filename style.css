@@ -1,0 +1,16 @@
+body {
+    background-color:black;
+    color:white;
+    border:solid;
+    text-align:center;
+  }
+  h1 {
+    border:dashed;
+  }
+  button {
+   border:dotted;
+  }
+  #album {height:350px;
+    width:350px;
+    
+  }
